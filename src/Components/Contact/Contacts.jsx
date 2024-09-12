@@ -7,10 +7,13 @@ const Contacts = () => {
     // these IDs from the previous steps
     emailjs.sendForm('service_8f8jv8u', 'template_naow449', event.target).then(
       () => {
-        console.log('SUCCESS!');
+        alert('Message is sent successfully!!');
+        document.getElementById('i1').value = '';
+        document.getElementById('i2').value = '';
+        document.getElementById('i3').value = '';
       },
       (error) => {
-        console.log('FAILED...', error);
+        alert('FAILED...', error);
       }
     );
   };
@@ -100,6 +103,7 @@ const Contacts = () => {
               <input
                 type="text"
                 name="name"
+                id="i1"
                 required
                 className="border border-gray-300 rounded-lg p-3"
               />
@@ -109,6 +113,7 @@ const Contacts = () => {
               <input
                 type="email"
                 name="email"
+                id="i2"
                 required
                 className="border border-gray-300 rounded-lg p-3"
               />
@@ -118,6 +123,7 @@ const Contacts = () => {
               <textarea
                 name="message"
                 required
+                id="i3"
                 rows="4"
                 className="border border-gray-300 rounded-lg p-3"
               ></textarea>
