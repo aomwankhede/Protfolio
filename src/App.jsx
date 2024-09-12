@@ -17,21 +17,27 @@ function App() {
         </section>
       </HOC>
       <section id="intro">
+        <br />
         <Intro />
       </section>
       <section id="blogs">
+        <br />
         <Blogs />
       </section>
       <section id="skills">
+        <br />
         <Skills />
       </section>
       <section id="projects">
+        <br />
         <Projects />
       </section>
       <section id="testimonials">
+        <br />
         <Testimonials />
       </section>
       <section id="contacts">
+        <br />
         <Contacts />
       </section>
     </React.Fragment>

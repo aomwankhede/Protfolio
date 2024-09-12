@@ -1,4 +1,19 @@
 const Contacts = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    emailjs.init({
+      publicKey: '2_DT2fl1A0v9C1bUY',
+    });
+    // these IDs from the previous steps
+    emailjs.sendForm('service_8f8jv8u', 'template_naow449', event.target).then(
+      () => {
+        console.log('SUCCESS!');
+      },
+      (error) => {
+        console.log('FAILED...', error);
+      }
+    );
+  };
   return (
     <section className="bg-gray-100 text-gray-900 min-h-screen py-12 px-4">
       <div className="text-center mb-12">
@@ -76,8 +91,8 @@ const Contacts = () => {
           </h3>
           <form
             name="contact"
-            method="POST"
-            action="/send"
+            id="contact_form"
+            onSubmit={handleSubmit}
             className="flex flex-col space-y-4"
           >
             <label className="flex flex-col">
