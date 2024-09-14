@@ -4,20 +4,20 @@ const testimonials = [
   {
     quote:
       'Aom is a highly skilled developer with an exceptional ability to tackle complex problems and deliver effective solutions.',
-    name: 'Jane Doe',
-    role: 'Lead Developer at TechCorp',
+    name: 'Rohit Samrit',
+    role: 'https://www.linkedin.com/in/rohit-samrit-431a52231/?originalSubdomain=in',
   },
   {
     quote:
-      'Working with Aom was a pleasure. Their dedication to quality and attention to detail were evident in every aspect of the project.',
-    name: 'John Smith',
-    role: 'Project Manager at Innovate Ltd.',
+      'Working with Aom was a pleasure. His dedication to quality and attention to detail were evident in every aspect of the project.',
+    name: 'Shubham Sonawane',
+    role: 'https://www.linkedin.com/in/shubham-sonawane-78a2b8214/?trk=people-guest_people_search-card&originalSubdomain=in',
   },
   {
     quote:
-      "Aom's technical expertise and creativity have greatly contributed to our project's success. They consistently exceed expectations.",
-    name: 'Emily Johnson',
-    role: 'Senior UX Designer at Creative Solutions',
+      "Aom's technical expertise and creativity have greatly contributed to our project's success. He consistently exceed expectations.",
+    name: 'Akash Dhamane',
+    role: 'https://www.linkedin.com/in/akash-dhamane-292114229/?locale=es_ES&trk=people-guest_people_search-card',
   },
 ];
 
@@ -44,7 +44,12 @@ const Testimonials = () => {
             </p>
             <div className="mt-4">
               <p className="font-semibold text-gray-800">{testimonial.name}</p>
-              <p className="text-sm text-gray-600">{testimonial.role}</p>
+              <p
+                onClick={() => window.open(testimonial.role, '_blank')}
+                className="text-blue-700 text-sm font-bold text-gray-600 hover:cursor-pointer"
+              >
+                Linkedin
+              </p>
             </div>
           </div>
         ))}

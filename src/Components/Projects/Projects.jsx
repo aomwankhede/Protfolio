@@ -2,22 +2,25 @@ import React from 'react';
 
 const projects = [
   {
-    title: 'Project One',
+    title: 'PixieCollab',
     description:
-      'An innovative project that involves cutting-edge technology and provides a solution to a complex problem.',
+      "MERN stack app for secure YouTube uploads via Google Authentication without sharing the YouTuber's password, solving internet reliability issues for vloggers.",
     videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    githubUrl: 'https://github.com/aomwankhede/PixieCollab/',
   },
   {
-    title: 'Project Two',
+    title: 'CarDeal Navigator',
     description:
-      'A full-stack application developed with modern technologies, focusing on performance and scalability.',
+      'Full-stack app using IBM Watson to help users find specific dealership reviews without reading the full text, optimized for performance and scalability.',
     videoUrl: 'https://www.youtube.com/embed/tgbNymZ7vqY',
+    githubUrl: 'https://github.com/aomwankhede/BestCars',
   },
   {
-    title: 'Project Three',
+    title: 'SocialNet Backend',
     description:
-      'A creative project demonstrating advanced UI/UX design principles and interactive features.',
+      'Scalable C++ backend for a social media platform with secure user authentication and optimized server performance.',
     videoUrl: 'https://www.youtube.com/embed/l9Px2Xy5R3o',
+    githubUrl: 'https://replit.com/@aomwankhede1/Social-Media-Backend-Server',
   },
 ];
 
@@ -39,21 +42,24 @@ const Projects = () => {
             key={index}
             className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
           >
-            <h3 className="text-2xl font-semibold mb-4 text-accent">
+            <h3
+              onClick={() => window.open(project.githubUrl, '_blank')}
+              className="text-2xl font-semibold mb-4 text-accent hover:cursor-pointer"
+            >
               {project.title}
             </h3>
             <p className="text-base text-gray-600 mb-4">
               {project.description}
             </p>
             <div className="aspect-w-16 aspect-h-9">
-              <iframe
+              {/* <iframe
                 className="w-full h-full rounded-lg"
                 src={project.videoUrl}
                 title={project.title}
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
-              ></iframe>
+              ></iframe> */}
             </div>
           </div>
         ))}

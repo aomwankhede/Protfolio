@@ -3,19 +3,19 @@ import React from 'react';
 const skills = [
   {
     category: 'Programming Languages',
-    items: ['JavaScript', 'Python', 'Java', 'C++'],
+    items: ['JavaScript', 'C++', 'Python', 'Java'],
   },
   {
     category: 'Web Technologies',
-    items: ['React', 'Node.js', 'Django', 'Tailwind CSS'],
+    items: ['MERN Stack', 'Flask', 'Django', 'Tailwind CSS', 'Bootstrap'],
   },
   {
     category: 'Databases',
-    items: ['MySQL', 'MongoDB', 'PostgreSQL'],
+    items: ['MySQL', 'MongoDB', 'MariaDB', 'Sqlite'],
   },
   {
     category: 'Tools & Platforms',
-    items: ['Git', 'Docker', 'AWS', 'Jenkins'],
+    items: ['Git', 'Postman', 'Github'],
   },
 ];
 

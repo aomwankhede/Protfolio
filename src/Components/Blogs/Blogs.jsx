@@ -3,13 +3,13 @@ const blogs = [
     title: 'Understanding React Hooks',
     description:
       'A deep dive into React Hooks and how they can simplify state management in functional components.',
-    link: '#',
+    link: 'https://medium.com/@wankhede.aom/understanding-react-hooks-9f87e6020044',
   },
   {
-    title: 'JavaScript ES6 Features',
+    title: 'Building Our Own React.js from Scratch',
     description:
-      'Explore the new features introduced in ES6 and how they enhance JavaScript development.',
-    link: '#',
+      'Explore how React core functions work and implement them ourselves',
+    link: 'https://medium.com/@wankhede.aom/building-our-own-react-js-from-scratch-678dff59361b',
   },
   {
     title: 'Building RESTful APIs with Node.js',
@@ -43,6 +43,7 @@ const Blogs = () => {
             <p className="text-base text-gray-600 mb-4">{blog.description}</p>
             <a
               href={blog.link}
+              target="_blank"
               className="text-blue-500 hover:text-blue-400 font-semibold transition-colors"
             >
               Read More {`-->`}
